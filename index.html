@@ -29,11 +29,11 @@
             height: 572px;
             margin: auto;
             border: 1px solid black;
-            background-image: url(/img/bar.jpg);
+            background-image: url(/assets/bar.jpg);
             background-repeat: no-repeat;
             position: relative;
             overflow: hidden;
-            cursor: url(./img/cursor.png)50 50, auto;
+            cursor: url(./assets/cursor.png)50 50, auto;
         }
 
         #btn-start{
@@ -259,7 +259,7 @@
         // 生成瓶子
         function createBottle(block) {
             const position = randomPosition();
-            const bottle = $('<img src="/img/bottle.png" class="bottle">');
+            const bottle = $('<img src="/assets/bottle.png" class="bottle">');
             bottle.css({ left: position.left, top: position.top });
             block.append(bottle);
             bindClickEvent(bottle);
@@ -310,7 +310,7 @@
                 bullets--;
                 shotSound();
                 showBullet();
-                const pow = $('<img src="./img/pow.png" class="pow">');
+                const pow = $('<img src="./assets/pow.png" class="pow">');
                 pow.css({ left: event.clientX - 360, top: event.clientY - 280 });
                 $(this).append(pow)
                 setTimeout(function () {
