@@ -29,7 +29,7 @@
             height: 572px;
             margin: auto;
             border: 1px solid black;
-            background-image: url(/assets/bar.jpg);
+            background-image: url(./assets/bar.jpg);
             background-repeat: no-repeat;
             position: relative;
             overflow: hidden;
@@ -259,7 +259,7 @@
         // 生成瓶子
         function createBottle(block) {
             const position = randomPosition();
-            const bottle = $('<img src="/assets/bottle.png" class="bottle">');
+            const bottle = $('<img src="./assets/bottle.png" class="bottle">');
             bottle.css({ left: position.left, top: position.top });
             block.append(bottle);
             bindClickEvent(bottle);
